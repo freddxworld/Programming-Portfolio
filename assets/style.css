@@ -1,0 +1,15 @@
+/* CSS Reset or Normalize (Optional) */
+/* This helps in making sure elements render consistently across different browsers */
+
+/* Include Normalize.css */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.img-small {
+  width: 5%;
+  height: 5%;
+}
