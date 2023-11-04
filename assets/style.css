@@ -1,0 +1,41 @@
+/* CSS Reset or Normalize (Optional) */
+/* This helps in making sure elements render consistently across different browsers */
+
+/* Include Normalize.css */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+html,
+body {
+  font-family: Arial, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  background-color: white;
+  height: 100%;
+}
+ul {
+  list-style-type: none;
+  padding: 0%;
+}
+li {
+  display: inline;
+  margin-right: 10px;
+}
+a {
+  text-decoration: none;
+}
+section {
+  background-color: lightcoral;
+  flex: 1;
+  padding: 1em;
+  margin: 1em;
+}
+.container {
+  min-height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+.img-small {
+  width: 4%;
+  height: 4%;
+}
