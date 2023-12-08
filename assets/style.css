@@ -7,10 +7,44 @@
 html,
 body {
   font-family: Arial, sans-serif;
+  background-color: white;  
   margin: 0%;
   padding: 0%;
+}
+.hover-effect {
   background-color: white;
-  height: 100%;
+  margin-top: 1.5%;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 10%;
+  padding: 0.5% 0%;
+  text-align: center;
+  border-radius: 51% 49% 49% 51% / 49% 56% 44% 51%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s; /* Add a smooth transition effect for the hover */
+  /* centers the header */
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.hover-effect:hover {
+  transform: scale(1.05); /* Increase the size on hover */
+}
+header {
+  background-color: white;
+  margin-top: 1.5%;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-bottom: 10%;
+  padding: 0.5% 0%;
+  text-align: center;
+  border-radius: 51% 49% 49% 51% / 49% 56% 44% 51%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Add a somewhat transparent border */
 }
 ul {
   list-style-type: none;
@@ -23,19 +57,50 @@ li {
 a {
   text-decoration: none;
 }
-section {
-  background-color: lightcoral;
-  flex: 1;
-  padding: 1em;
-  margin: 1em;
-}
-.container {
-  min-height: 100%;
-  overflow: auto;
+/*
+move the footer to the middle of the page
+try to add soem spacing on the outr of the icons so it dosent look so clumped up on the outside icons gmail and insta
+add a border somewhat trasperent
+change background color to gray but make it somewhat transperetn to see anything else in the background
+*/
+footer {
+  padding: 20px 0;
+  /* padding: 0px; */
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-right: 35.5%;
+  margin-left: 35.5%;
+  /* margin-bottom: 1%; */
+  background-color: rgba(0, 255, 255, 0.7); /* Aqua color with 70% opacity */
+  text-align: center;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
+
+footer:hover {
+  filter: grayscale(100%);
+}
+
 .img-small {
-  width: 4%;
-  height: 4%;
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  border-radius: 30%;
+  transition: transform 0.3s ease-in-out;
 }
+.img-small:hover {
+  transform: scale(1.2); /* Enlarge the icon on hover */
+}
+.about-me{
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-left: 22%;
+  margin-right: 22%;
+}
+/* dont know if we will need to use this */
+.about-me-h2{}
