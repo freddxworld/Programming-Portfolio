@@ -1,6 +1,3 @@
-/* CSS Reset or Normalize (Optional) */
-/* This helps in making sure elements render consistently across different browsers */
-
 /* Include Normalize.css */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
@@ -8,124 +5,93 @@ html,
 body {
   font-family: Arial, sans-serif;
   background-color: #333333;
-  margin: 0%;
-  padding: 0%;
   color: #cccccc;
+  height: 100%;
+}
+
+.container {
   display: flex;
+  justify-content: space-between;
+  margin: 0 390px;
+  padding: 0%;
   height: 100%;
 }
 
 .info {
-  margin-left: 80px;
-  margin-top: 50px;
-  margin-right: 50px;
+  margin-top: 90px;
+  white-space: nowrap;
   display: flex;
+  /* flex: 1; */
   flex-direction: column;
+  padding-right: 150px;
+}
+
+h1 {
+  font-size: 3.8em;
 }
 
 .body_info {
   display: flex;
   flex-direction: column;
+  margin-top: 90px;
+  /* margin-left: 50px; */
+  /* padding-left: 80px; */
 }
 
-.hover-effect {
-  background-color: white;
-  margin-top: 1.5%;
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-bottom: 10%;
-  padding: 0.5% 0%;
-  text-align: center;
-  border-radius: 51% 49% 49% 51% / 49% 56% 44% 51%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  transition: transform 0.3s;
-  /* Add a smooth transition effect for the hover */
-  /* centers the header */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hover-effect:hover {
-  transform: scale(1.05);
-  /* Increase the size on hover */
-}
-
-header {
-  background-color: white;
-  margin-top: 1.5%;
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-bottom: 10%;
-  padding: 0.5% 0%;
-  text-align: center;
-  border-radius: 51% 49% 49% 51% / 49% 56% 44% 51%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Add a subtle shadow */
-  box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  /* Add a somewhat transparent border */
-}
-
-ul {
+.tableContents {
   list-style-type: none;
-  padding: 0%;
+  padding: 0;
+  margin: 0;
 }
 
-li {
-  display: inline;
+.tableContents li:before {
+  content: "-";
   margin-right: 10px;
 }
 
-a {
-  text-decoration: none;
-}
-
-/*
-move the footer to the middle of the page
-try to add soem spacing on the outr of the icons so it dosent look so clumped up on the outside icons gmail and insta
-add a border somewhat trasperent
-change background color to gray but make it somewhat transperetn to see anything else in the background
-*/
-footer {
-  /* padding: 20px 0; */
-  padding: 0px;
-  border-radius: 50px;
-  margin: 0 auto;
-  /* margin-right: 40%; */
-  /* margin-left: 40%; */
-  /* margin-bottom: 0.5%; */
-  background-color: rgba(211, 211, 211, 0.3);
-  /* Light gray with 50% transparency */
-  /* background-color: rgba(0, 255, 255, 0.7); /* Aqua color with 70% opacity */
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  /* position: fixed; */
-  /* bottom: 0; */
-  /* left: 0; */
-  /* right: 0; */
-}
-
-.img-small {
-  width: 38px;
-  height: 38px;
-  margin: 3.5px;
-  border-radius: 30%;
-  transition: transform 0.3s ease-in-out;
-}
-
-.img-small:hover {
-  transform: scale(1.2);
-  /* Enlarge the icon on hover */
-}
-
-.about-me {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-left: 22%;
-  margin-right: 22%;
-}
+/**/
+/* ul { */
+/*   list-style-type: none; */
+/*   padding: 0%; */
+/* } */
+/**/
+/* li { */
+/*   display: inline; */
+/*   margin-right: 10px; */
+/* } */
+/**/
+/* a { */
+/*   text-decoration: none; */
+/* } */
+/**/
+/* footer { */
+/*   /* padding: 20px 0; */
+/*   padding: 0px; */
+/*   border-radius: 50px; */
+/*   margin: 0 auto; */
+/*   /* margin-right: 40%; */
+/*   /* margin-left: 40%; */
+/*   /* margin-bottom: 0.5%; */
+/*   background-color: rgba(211, 211, 211, 0.3); */
+/*   /* Light gray with 50% transparency */
+/*   /* background-color: rgba(0, 255, 255, 0.7); /* Aqua color with 70% opacity */
+/*   text-align: center; */
+/*   display: flex; */
+/*   justify-content: space-around; */
+/*   /* position: fixed; */
+/*   /* bottom: 0; */
+/*   /* left: 0; */
+/*   /* right: 0; */
+/* } */
+/**/
+/* .img-small { */
+/*   width: 38px; */
+/*   height: 38px; */
+/*   margin: 3.5px; */
+/*   border-radius: 30%; */
+/*   transition: transform 0.3s ease-in-out; */
+/* } */
+/**/
+/* .img-small:hover  */
+/*   transform: scale(1.2); */
+/*   /* Enlarge the icon on hover */
