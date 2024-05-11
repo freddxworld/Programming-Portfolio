@@ -70,9 +70,12 @@ h3 {
   margin: 0;
   margin-top: 65px;
 }
+
 .tableContents li {
-  position: relative; /* Required for absolute positioning of pseudo-element */
-  padding-left: 45px; /* Adjust padding to create space for the line */
+  position: relative;
+  /* Required for absolute positioning of pseudo-element */
+  padding-left: 45px;
+  /* Adjust padding to create space for the line */
   margin-bottom: 30px;
   font-size: 13px;
 }
@@ -82,18 +85,27 @@ h3 {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%); /* Center vertically */
-  width: 30px; /* Adjust the width of the line */
-  height: 0.5px; /* Adjust the thickness of the line */
-  background-color: lightgray; /* Adjust the color of the line */
+  transform: translateY(-50%);
+  /* Center vertically */
+  width: 30px;
+  /* Adjust the width of the line */
+  height: 0.5px;
+  /* Adjust the thickness of the line */
+  background-color: lightgray;
+  /* Adjust the color of the line */
 }
+
 /* .tableContents li:before { */
-/*   /* content: "-"; */ */
+/*   /* content: "-"; */
+*/
 /*   content: ""; */
 /*   position: absolute; */
-/*   /* margin-right: 8px; */ */
-/*   /* top: 50%; */ */
-/*   /* left: 0; */ */
+/*   /* margin-right: 8px; */
+*/
+/*   /* top: 50%; */
+*/
+/*   /* left: 0; */
+*/
 /*   width: 10px; */
 /*   height: 3px; */
 /*   background-color: black; */
@@ -107,4 +119,61 @@ p {
 p:nth-of-type(-n + 2) {
   margin-bottom: 17px;
   /* Adjust the margin as needed */
+}
+
+/* Media Query for changing layout on smaller screens */
+@media screen and (max-width: 1050px) {
+  .container {
+    flex-direction: column;
+    margin: 0 auto;
+    /* Center the container */
+  }
+
+  .info {
+    margin: 20px auto;
+    /* Center the info section */
+    text-align: center;
+    /* Center text */
+  }
+
+  .logos {
+    position: static;
+    margin-top: 20px;
+    /* Adjust margin */
+  }
+
+  .body_info {
+    margin-top: 20px;
+    /* Adjust margin */
+  }
+
+  .tableContents li {
+    padding-left: 20px;
+    /* Adjust padding */
+  }
+}
+
+/* Prevent shrinking until a certain minimum width is reached */
+@media screen and (max-width: 500px) {
+
+  html,
+  body {
+    min-width: 500px;
+    /* Adjust the minimum width as needed */
+  }
+
+  .container {
+    min-width: 500px;
+    /* Adjust the minimum width as needed */
+  }
+
+  .info {
+    min-width: 500px;
+    /* Adjust the minimum width as needed */
+  }
+
+  .body_info {
+    min-width: 500px;
+    /* Adjust the minimum width as needed */
+  }
 }
