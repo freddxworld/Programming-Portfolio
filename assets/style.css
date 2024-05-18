@@ -87,9 +87,6 @@ img {
   margin: 0 9px;
 }
 
-.bf {
-}
-
 .tableContents {
   list-style-type: none;
   padding: 0;
@@ -131,84 +128,49 @@ img {
 /* Media Query for responsive design */
 @media screen and (max-width: 1050px) {
   .container {
-    margin: 0 45px;
-    /* Adjust margin for smaller screens */
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 3.5rem;
+    /* margin: 0px 45px; */
   }
 
-  /* Adjust .info for smaller screens */
+  h3 {
+    margin-bottom: 1px;
+  }
+
   .info {
     position: static;
-    /* Remove fixed positioning */
-    width: auto;
-    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
-  /* Adjust .body_info for smaller screens */
+  .logos {
+    position: static;
+    margin-top: 15px;
+  }
+
   .body_info {
-    margin-top: 6rem;
-    /* Adjust margin for smaller screens */
-    padding-left: 45px;
-    /* Adjust padding for smaller screens */
     width: 100%;
+    margin: 0;
+  }
+
+  .tableContents {
+    display: none;
+  }
+
+  .tbHeaders {
+    display: block;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 2rem;
+    color: #ffffff;
+  }
+
+  .bf {
+    max-width: 22rem;
+    margin-top: 1.5rem;
+    line-height: 1.4;
   }
 }
-
-/* /* Media Query for changing layout on smaller screens */
-/* @media screen and (max-width: 1050px) { */
-/*   .container { */
-/*     flex-direction: column; */
-/*     margin: 0px 45px; */
-/*   } */
-/**/
-/*   .info { */
-/*     flex-direction: column; */
-/*     position: static; */
-/*     width: auto; */
-/*     margin-right: 0; */
-/*   } */
-/**/
-/*   .logos { */
-/*     position: static; */
-/*     margin-top: 15px; */
-/*   } */
-/**/
-/*   .body_info { */
-/*     margin-top: 6rem; */
-/*   } */
-/**/
-/*   .tableContents li { */
-/*     padding-left: 20px; */
-/*   } */
-/**/
-/*   h1 { */
-/*     font-size: 48px; */
-/*   } */
-/**/
-/*   h3 { */
-/*     font-size: 20px; */
-/*     margin-top: 0.5rem; */
-/*     margin-bottom: 0; */
-/*   } */
-/**/
-/*   .bf { */
-/*     max-width: 22rem; */
-/*     margin-top: 1.5rem; */
-/*     line-height: 1.4; */
-/*   } */
-/**/
-/*   .tableContents { */
-/*     display: none; */
-/*   } */
-/**/
-/*   .tbHeaders { */
-/*     letter-spacing: 0.1rem; */
-/*     text-transform: uppercase; */
-/*     font-size: 14px; */
-/*     margin-bottom: 2rem; */
-/*     color: #ffffff; */
-/*   } */
-/**/
-/*   .tbHeaders:not(:first-child) { */
-/*     margin-top: 6rem; */
-/*   } */
-/* } */
