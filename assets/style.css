@@ -9,33 +9,44 @@ body {
   font-size: 17px;
 }
 
+/* done */
+
 .logos {
   display: flex;
   position: absolute;
   bottom: 95px;
 }
 
+/* done */
+
 img {
   width: 30px;
   margin: 0;
 }
 
+/* done */
+
 .logo {
   margin: 0 9px;
 }
 
-.container {
+done .container {
   display: flex;
-  margin: 0 390px;
   height: 100%;
 }
 
+/* done */
+
 .info {
   margin-top: 80px;
-  margin-right: 150px;
   display: flex;
   flex-direction: column;
+  position: fixed;
+  width: 300px;
+  height: 100vh;
 }
+
+/* done */
 
 h1 {
   font-size: 3.2em;
@@ -55,10 +66,16 @@ h3 {
 }
 
 .body_info {
+  margin-top: 80px;
+  /* margin-right: 150px; */
   display: flex;
   flex-direction: column;
-  margin-top: 95px;
+  position: fixed;
+  width: 40%;
+  height: 100vh;
+  padding-left: 500px;
 }
+/* done */
 
 .tableContents {
   list-style-type: none;
@@ -66,6 +83,7 @@ h3 {
   margin: 0;
   margin-top: 65px;
 }
+/* done */
 
 .tableContents li {
   position: relative;
@@ -73,6 +91,7 @@ h3 {
   margin-bottom: 30px;
   font-size: 13px;
 }
+/* done */
 
 .tableContents li:before {
   content: "";
@@ -84,90 +103,100 @@ h3 {
   height: 0.5px;
   background-color: lightgray;
 }
+/* done */
 
 p {
   margin: 0;
   line-height: 1.625;
 }
+/* done */
 
 p:nth-of-type(-n + 2) {
   margin-bottom: 17px;
 }
+/* done */
 
-/* Media Query for changing layout on smaller screens */
+/* Media Query for responsive design */
 @media screen and (max-width: 1050px) {
   .container {
-    flex-direction: column;
-    margin: 0px 45px;
+    margin: 0 45px;
+    /* Adjust margin for smaller screens */
   }
 
+  /* Adjust .info for smaller screens */
   .info {
-    flex-direction: column;
-  }
-
-  .logos {
     position: static;
-    margin-top: 15px;
+    /* Remove fixed positioning */
+    width: auto;
+    margin-right: 0;
   }
 
+  /* Adjust .body_info for smaller screens */
   .body_info {
     margin-top: 6rem;
-  }
-
-  .tableContents li {
-    padding-left: 20px;
-  }
-
-  h1 {
-    font-size: 48px;
-  }
-
-  h3 {
-    font-size: 20px;
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-  }
-
-  .bf {
-    max-width: 22rem;
-    margin-top: 1.5rem;
-    line-height: 1.4;
-  }
-
-  .tableContents {
-    display: none;
-  }
-
-  .tbHeaders {
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-bottom: 2rem;
-    color: #ffffff;
-  }
-
-  .tbHeaders:not(:first-child) {
-    margin-top: 6rem;
+    /* Adjust margin for smaller screens */
+    padding-left: 45px;
+    /* Adjust padding for smaller screens */
+    width: 100%;
   }
 }
 
-/* Prevent shrinking until a certain minimum width is reached */
-@media screen and (max-width: 500px) {
-
-  html,
-  body {
-    min-width: 500px;
-  }
-
-  .container {
-    min-width: 500px;
-  }
-
-  .info {
-    min-width: 500px;
-  }
-
-  .body_info {
-    min-width: 500px;
-  }
-}
+/* /* Media Query for changing layout on smaller screens */
+/* @media screen and (max-width: 1050px) { */
+/*   .container { */
+/*     flex-direction: column; */
+/*     margin: 0px 45px; */
+/*   } */
+/**/
+/*   .info { */
+/*     flex-direction: column; */
+/*     position: static; */
+/*     width: auto; */
+/*     margin-right: 0; */
+/*   } */
+/**/
+/*   .logos { */
+/*     position: static; */
+/*     margin-top: 15px; */
+/*   } */
+/**/
+/*   .body_info { */
+/*     margin-top: 6rem; */
+/*   } */
+/**/
+/*   .tableContents li { */
+/*     padding-left: 20px; */
+/*   } */
+/**/
+/*   h1 { */
+/*     font-size: 48px; */
+/*   } */
+/**/
+/*   h3 { */
+/*     font-size: 20px; */
+/*     margin-top: 0.5rem; */
+/*     margin-bottom: 0; */
+/*   } */
+/**/
+/*   .bf { */
+/*     max-width: 22rem; */
+/*     margin-top: 1.5rem; */
+/*     line-height: 1.4; */
+/*   } */
+/**/
+/*   .tableContents { */
+/*     display: none; */
+/*   } */
+/**/
+/*   .tbHeaders { */
+/*     letter-spacing: 0.1rem; */
+/*     text-transform: uppercase; */
+/*     font-size: 14px; */
+/*     margin-bottom: 2rem; */
+/*     color: #ffffff; */
+/*   } */
+/**/
+/*   .tbHeaders:not(:first-child) { */
+/*     margin-top: 6rem; */
+/*   } */
+/* } */
