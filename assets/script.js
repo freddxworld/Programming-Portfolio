@@ -36,15 +36,51 @@ document.querySelectorAll(".tableContents li").forEach((item, index) => {
     }
   });
 });
-
+//
+// document.addEventListener("DOMContentLoaded", function() {
+//   const sections = document.querySelectorAll(".body_info > div");
+//   const navItems = document.querySelectorAll(".tableContents li");
+//
+//   const observerOptions = {
+//     root: null,
+//     rootMargin: "0px",
+//     threshold: 0.5, // Adjust this value based on when you want to trigger the active state
+//   };
+//
+//   const observerCallback = (entries) => {
+//     entries.forEach((entry) => {
+//       const navItem = document.querySelector(
+//         `.tableContents li[data-target="${entry.target.id}"]`,
+//       );
+//       if (entry.isIntersecting) {
+//         navItems.forEach((item) => item.classList.remove("active"));
+//         navItem.classList.add("active");
+//       }
+//     });
+//   };
+//
+//   const observer = new IntersectionObserver(observerCallback, observerOptions);
+//   sections.forEach((section) => observer.observe(section));
+// });
+//
 document.addEventListener("DOMContentLoaded", function() {
   const sections = document.querySelectorAll(".body_info > div");
   const navItems = document.querySelectorAll(".tableContents li");
 
-  const observerOptions = {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.5, // Adjust this value based on when you want to trigger the active state
+  // Function to get threshold based on screen size
+  const getObserverOptions = () => {
+    const screenWidth = window.innerWidth;
+    let threshold = 0.5; // Default threshold
+
+    if (screenWidth <= 1300) {
+      threshold = 0.3; // Adjust threshold for smaller screens
+    }
+
+    return {
+      root: null,
+      rootMargin: "0px",
+      threshold: threshold,
+    };
   };
 
   const observerCallback = (entries) => {
@@ -59,6 +95,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   };
 
+  const observerOptions = getObserverOptions();
   const observer = new IntersectionObserver(observerCallback, observerOptions);
+
   sections.forEach((section) => observer.observe(section));
+
+  // Recreate observer on window resize
+  window.addEventListener("resize", () => {
+    const newObserverOptions = getObserverOptions();
+    observer.disconnect();
+    sections.forEach((section) => observer.observe(section));
+  });
 });
