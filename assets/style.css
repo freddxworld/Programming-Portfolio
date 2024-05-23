@@ -123,14 +123,22 @@ img {
   width: 65px;
   background-color: #ffffff;
   height: 1.8px;
-  /* Grow width on hover */
 }
 
 .tableContents li:hover {
   color: #ffffff;
-  /* Change text color on hover */
   padding-left: 80px;
-  /* Increase left padding on hover */
+}
+
+.tableContents li.active {
+  color: #ffffff;
+  padding-left: 80px;
+}
+
+.tableContents li.active:before {
+  width: 65px;
+  background-color: #ffffff;
+  height: 1.8px;
 }
 
 .tbHeaders {
@@ -143,6 +151,10 @@ img {
 }
 
 .skillList {
+  margin-top: 5.5rem;
+}
+
+.personalProjects {
   margin-top: 5.5rem;
 }
 

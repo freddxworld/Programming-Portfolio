@@ -1,5 +1,6 @@
 function smoothScroll(target, duration, offset = 0) {
-  const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+  const targetPosition =
+    target.getBoundingClientRect().top + window.pageYOffset - offset;
   const startPosition = window.pageYOffset;
   const distance = targetPosition - startPosition;
   let startTime = null;
@@ -34,4 +35,30 @@ document.querySelectorAll(".tableContents li").forEach((item, index) => {
       }
     }
   });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll(".body_info > div");
+  const navItems = document.querySelectorAll(".tableContents li");
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5, // Adjust this value based on when you want to trigger the active state
+  };
+
+  const observerCallback = (entries) => {
+    entries.forEach((entry) => {
+      const navItem = document.querySelector(
+        `.tableContents li[data-target="${entry.target.id}"]`,
+      );
+      if (entry.isIntersecting) {
+        navItems.forEach((item) => item.classList.remove("active"));
+        navItem.classList.add("active");
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+  sections.forEach((section) => observer.observe(section));
 });
