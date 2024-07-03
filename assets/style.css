@@ -177,8 +177,6 @@ img {
   color: #888888;
 }
 
-/* .projectSquare.dim . */
-
 .timeline {
   margin: 20px;
 }
@@ -187,7 +185,6 @@ img {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  /* width: 100%; */
 }
 
 .ptitle {
@@ -202,19 +199,22 @@ img {
 
 .ptools {
   display: flex;
-  justify-content: space-between;
-  width: 30%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 8px;
 }
 
 .circleTool {
   background-color: #2a3b4c;
   color: #66ccff;
   width: 100px;
+  flex-basis: calc(20% - 100px);
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 23%;
+  border-radius: 28%;
   margin: 0 5px;
   padding: 0 6px;
 }
