@@ -107,3 +107,20 @@ document.addEventListener("DOMContentLoaded", function() {
     sections.forEach((section) => observer.observe(section));
   });
 });
+const projectSquares = document.querySelectorAll(".projectSquare");
+
+projectSquares.forEach((project) => {
+  project.addEventListener("mouseover", () => {
+    projectSquares.forEach((p) => {
+      if (p !== project) {
+        p.classList.add("dim");
+      }
+    });
+  });
+
+  project.addEventListener("mouseout", () => {
+    projectSquares.forEach((p) => {
+      p.classList.remove("dim");
+    });
+  });
+});
