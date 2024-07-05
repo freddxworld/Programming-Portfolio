@@ -179,6 +179,12 @@ img {
 
 .timeline {
   margin: 20px;
+  white-space: nowrap;
+  font-size: 14.5px;
+  
+}
+.pbodyinfo{
+  font-size: 14.5px;
 }
 
 .projectinfo {
@@ -190,7 +196,8 @@ img {
 .ptitle {
   margin: 0;
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
 .projectSquare:hover .ptitle {
@@ -208,14 +215,13 @@ img {
 .circleTool {
   background-color: #2a3b4c;
   color: #66ccff;
-  width: 100px;
+  width: 100%;
   flex-basis: calc(20% - 100px);
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 28%;
-  margin: 0 5px;
   padding: 0 6px;
 }
 
