@@ -297,7 +297,6 @@ img {
     font-size: 14px;
     margin-bottom: 2rem;
     color: #ffffff;
-    /* testing */
     background-color: #4d4d4d;
     width: 100%;
     padding: 10px;
@@ -308,6 +307,35 @@ img {
     max-width: 22rem;
     margin-top: 1.5rem;
     line-height: 1.4;
+  }
+
+  .projectSquare:hover {
+    background-color: inherit;
+    box-shadow: none;
+  }
+
+  .projectSquare:hover .ptitle {
+    color: inherit !important;
+  }
+
+  .projectSquare:hover .projectinfo,
+  .projectSquare:hover .timeline,
+  .projectSquare:hover .circleTool {
+    color: inherit !important;
+  }
+
+  .projectSquare.dim .ptitle,
+  .projectSquare.dim .projectinfo,
+  .projectSquare.dim .timeline {
+    color: inherit !important;
+  }
+}
+
+/* No color change for .circleTool in smaller screens */
+@media screen and (max-width: 1050px) {
+  .projectSquare.dim .circleTool {
+    color: #66ccff;
+    background-color: #2a3b4c;
   }
 }
 
