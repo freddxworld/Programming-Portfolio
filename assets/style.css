@@ -319,8 +319,7 @@ img {
   }
 
   .projectSquare:hover .projectinfo,
-  .projectSquare:hover .timeline,
-  .projectSquare:hover .circleTool {
+  .projectSquare:hover .timeline {
     color: inherit !important;
   }
 
@@ -329,13 +328,14 @@ img {
   .projectSquare.dim .timeline {
     color: inherit !important;
   }
-}
 
-/* No color change for .circleTool in smaller screens */
-@media screen and (max-width: 1050px) {
   .projectSquare.dim .circleTool {
     color: #66ccff;
     background-color: #2a3b4c;
+  }
+
+  .projectSquare:hover .circleTool {
+    color: #66ccff !important;
   }
 }
 
