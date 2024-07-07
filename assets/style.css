@@ -160,10 +160,7 @@ img {
 }
 
 .projectSquare {
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+  display: flex; justify-content: space-between; cursor: pointer; transition: background-color 0.2s ease;
 }
 
 .projectSquare:hover {
@@ -338,7 +335,7 @@ img {
     color: #ffffff;
   }
 
-  .projectSquare:dim .ptitle {
+  .projectSquare.dim .ptitle {
     color: #ffffff;
   }
 }
