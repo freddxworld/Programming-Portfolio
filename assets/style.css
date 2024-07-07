@@ -199,6 +199,7 @@ img {
   padding: 0;
   margin-bottom: 8px;
   font-weight: bold;
+  color: #ffffff;
 }
 
 .projectSquare:hover .ptitle {
@@ -314,16 +315,11 @@ img {
     box-shadow: none;
   }
 
-  .projectSquare:hover .ptitle {
-    color: inherit !important;
-  }
-
   .projectSquare:hover .projectinfo,
   .projectSquare:hover .timeline {
     color: inherit !important;
   }
 
-  .projectSquare.dim .ptitle,
   .projectSquare.dim .projectinfo,
   .projectSquare.dim .timeline {
     color: inherit !important;
@@ -336,6 +332,14 @@ img {
 
   .projectSquare:hover .circleTool {
     color: #66ccff !important;
+  }
+
+  .projectSquare:hover .ptitle {
+    color: #ffffff;
+  }
+
+  .projectSquare:dim .ptitle {
+    color: #ffffff;
   }
 }
 
@@ -352,5 +356,26 @@ img {
 
   h3 {
     font-size: 1.1em;
+  }
+
+  .projectSquare {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .timeline {
+    margin: 0px 20px;
+    /* margin-top: 2rem;  */
+    font-size: 13.5px;
+  }
+
+  .projectinfo {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+  }
+
+  p:nth-of-type(-n + 2) {
+    margin-bottom: 7px;
   }
 }
