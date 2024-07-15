@@ -32,9 +32,27 @@ GitHub Pages. Design inspired by Brittany Chiang.
 
 ## 📷 Screenshots
 
-This is how the website will look on a computer
+This is how the website will look on a computers
 ![computer full view](assets/screenshots/computerViewpt1.png)
 
 ![computer full view](assets/screenshots/computerViewpt2.png)
 
 ![computer full view](assets/screenshots/computerViewpt3.png)
+
+![computer full view](assets/screenshots/computerViewps.png)
+
+This is how the website will look like on tablets
+
+![computer full view](assets/screenshots/tabletView.png)
+
+![computer full view](assets/screenshots/tabletViewpt2.png)
+
+![computer full view](assets/screenshots/tabletviewpt3.png)
+
+This is how the website will look like on a phone screen
+
+![computer full view](assets/screenshots/phoneviewpt1.png)
+
+![computer full view](assets/screenshots/phoneviewpt2.png)
+
+![computer full view](assets/screenshots/phoneView.png)
