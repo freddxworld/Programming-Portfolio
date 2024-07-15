@@ -28,8 +28,8 @@ GitHub Pages. Design inspired by Brittany Chiang.
 
 ## 📹Demo
 
-
 [![Watch the demo video](https://img.youtube.com/vi/Q9gl1FVQyps/0.jpg)](https://www.youtube.com/watch?v=Q9gl1FVQyps)
+
 ## 📷 Screenshots
 
 This is how the website will look on a computers
