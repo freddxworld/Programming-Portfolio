@@ -32,5 +32,9 @@ GitHub Pages. Design inspired by Brittany Chiang.
 
 ## 📷 Screenshots
 
-![Homepage of the pomodoro timer](assets/screenshots/homepage.png)
-Homepage of the pomodoro timer
+This is how the website will look on a computer
+![computer full view](assets/screenshots/computerViewpt1.png)
+
+![computer full view](assets/screenshots/computerViewpt2.png)
+
+![computer full view](assets/screenshots/computerViewpt3.png)
